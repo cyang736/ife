@@ -1,0 +1,38 @@
+.bgbody{
+  background-color: #fffff4;
+}
+.h2{
+  color: gray;
+  font-size: large;
+}
+.au{
+  font-size: small;
+  text-align: left;
+}
+.photo{
+  text-align: left;
+  font-size: large;
+}
+.table1{
+  margin-right: 1em;
+}
+#tr1{
+  width: 70em;
+}
+#tr2{
+  background-color: gray;
+}
+#foot{
+  text-align: center;
+}
+#navigator{
+  background-color: gray;
+}
+.aleft{
+  text-align: left;
+}
+.background{
+  background-color: #f4f4f4;
+  border: 0.001em solid #000000;
+  padding-right: 1em;
+}
