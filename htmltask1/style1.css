@@ -1,20 +1,27 @@
 .bgbody{
   background-color: #fffff4;
 }
-.h2{
-  color: gray;
-  font-size: large;
-}
-.au{
-  font-size: small;
-  text-align: left;
-}
 .photo{
   text-align: left;
   font-size: large;
 }
 .table1{
-  margin-right: 1em;
+  position: relative;
+  left: 1.2em;
+  top: auto;
+}
+.tip{
+  position: relative;
+  left: 4.5em;
+  top: auto;
+}
+.form1 {
+text-align: center;
+}
+.foot{
+  margin: 20px;
+    background-color: #fff;
+    border: 1px solid #000000;
 }
 #tr1{
   width: 70em;
@@ -22,17 +29,49 @@
 #tr2{
   background-color: gray;
 }
-#foot{
-  text-align: center;
-}
+
 #navigator{
   background-color: gray;
+  width:100em;
+  height:7em;
+  position: relative;
+
+}
+#navul{
+  position: absolute;
+  right: 10em;
+  top:.5em;
+}
+#temp{
+  position: relative;
+  left: -1em;
 }
 .aleft{
-  text-align: left;
+  position: relative;
+  left: 1.2em;
 }
-.background{
-  background-color: #f4f4f4;
-  border: 0.001em solid #000000;
-  padding-right: 1em;
+.background{margin: 20px;
+  background-color: #fff;
+  border: 1px solid #000000;
+}
+.background h1,.background h2{
+  left: 1em;
+  position: relative;
+  top: 0em;
+}
+.au{
+  color: gray;
+  font-size: small;
+}
+.background p{
+  font-family: cursive;
+  position: relative;
+  left: 1.2em;
+  top: auto;
+  font-size: large;
+}
+.background img{
+  position: relative;
+  left: 1em;
+  top: auto;
 }
