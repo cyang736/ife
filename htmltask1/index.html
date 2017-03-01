@@ -7,14 +7,14 @@
 <body class="bgbody">
   <div id="navigator" >
   <h1 color="blue">MyFirstHTML</h1>
-  <ul >
-    <a href="http://www.baidu.com"><li>导航链接一</li></a>
-    <a href="http://www.baidu.com"><li>导航链接二</li></a>
-    <a href="http://www.baidu.com"><li>导航链接三</li></a>
-    <a href="http://www.baidu.com"><li>导航链接四</li></a>
+  <ul id="navul">
+    <li><a href="http://www.baidu.com">导航链接一</a></li>
+    <li><a href="http://www.baidu.com">导航链接一</a></li>
+    <li><a href="http://www.baidu.com">导航链接一</a></li>
+    <li><a href="http://www.baidu.com">导航链接一</a></li>
   </ul>
 </div>
-  <div class="background">
+  <section class="background">
   <h2>文章一级标题</h2>
   <h2 class="h2">文章二级标题</h2>
   <p class="au">文章作者 文章发表时间</p>
@@ -26,7 +26,7 @@
   <p>这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落.</p>
   <p>这是一个很长很长的段落,<a href="http:www.baidu.com">这里有一个链接链接到www.baidu.com</a>这是一个很长很长的段落,
 这是一个很长很长的段落,</p>
-  </div>
+  </section>
   <br>
   <div class="background">
   <h2>另一篇文章一级标题</h2>
@@ -113,15 +113,15 @@
   </table>
   </div>
   <br>
-  <div class="background" id="foot">
+  <div class="foot" >
   <h2 class="aleft">这里以后是一个侧栏,这是侧栏的标题</h2>
-  <form>
+  <form class="form1">
     <p>请输入邮箱地址:
     <input type="text" value="这是一个文本输入框"></p>
-    <p>邮箱地址请按要求格式输入</p>
-    <p>请输入密码:<input type="text" value="这是一个文本输入框"></p>
-      <p>请重复输入密码:<input type="text" value="这是一个文本输入框"></p>
-    <p>密码请为6-16位英文和数字</p>
+    <pre class="tip">邮箱地址请按要求格式输入</pre>
+    <p id="temp">请输入密码:<input type="text" value="这是一个文本输入框"></p>
+    <p >请重复输入密码:<input type="text" value="这是一个文本输入框"></p>
+    <pre class="tip">密码请为6-16位英文和数字</pre>
     <p>性别:<input type="radio" checked>男</input> <input type="radio">女</input>
       城市<select name="city">
         <option>北京</option>
