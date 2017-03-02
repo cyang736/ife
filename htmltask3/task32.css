@@ -1,0 +1,49 @@
+*{
+  margin: 0px;
+  padding: 20px;
+}
+.bg{
+  border: 1px solid #999;
+  background: #eee;
+  min-width: 600px;
+  height: 500px;
+}
+body{
+  font-size: 15px;
+}
+.pg1 {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #999;
+    background: #fff;
+    padding: 0px; /* 依据示意图将padding重设为0px而不是20px */
+}
+.pg2 {
+    width: 120px;
+    height: 500px;
+    border: 1px solid #999;
+    background: #fff;
+    padding: 0px; /* 依据示意图 */
+}
+.pg3 {
+    border: 1px solid #999;
+    background: #fff;
+    margin-left:220px; /* 边距 */
+    margin-right:140px;
+    min-height: 400px;
+}
+.bg>.pg1{/*子类选择器*/
+  float: left;
+}
+.bg>.pg2{
+  float:right;
+}
+//清除浮动
+.clearfix::after{
+  content:"";
+  display: block;
+  clear: both;
+}
+.clearfix{
+  *zoom:1;
+}
