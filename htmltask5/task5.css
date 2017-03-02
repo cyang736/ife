@@ -1,0 +1,102 @@
+body{
+  background: #ccc;
+}
+.nav{
+  position: relative;
+  background: gray;
+  margin-left: 150px;
+  margin-right: 150px;
+  border: 1px solid #999;
+}
+ul li{
+  list-style: none;
+}
+
+.nfloat li{
+  float: left;
+  padding-left: 20px;
+}
+.nfloat{
+  margin: 10px;
+  float: right;
+}
+.nav::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.page{
+  background: #fff;
+  margin-left: 170px;
+  margin-right: 560px;
+  margin-top: 20px;
+  border: 1px solid #000;
+}
+.fl{
+  position: relative;
+  width: 350px;
+  float: right;
+  padding: 20px;
+  border: 1px solid #000;
+  background: #fff;
+  margin-right: 150px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.page h1,.page h2,.page p,.page img{
+  margin-left: 10px;
+}
+.form{
+  width: 98%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+#tb td{
+  height: 24px;
+  line-height: 24px;
+  padding-left: 6px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+#tb tr:nth-child(1){
+  background-color:#343434;
+  color: #fff;
+}
+#tb tr:nth-last-child(1){
+  background-color:#ccc;
+}
+h2{
+  color: gray;
+  font-size: x-large;
+}
+.au{
+  font-size: medium;
+  color: gray;
+}
+.pto{
+background: #fff;
+float: left;
+margin:10px;
+}
+.page::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.pto>.tt{
+  margin-bottom: 0px;
+  margin-left: 90px;
+}
+
+#temt{
+  width: 200px;
+  height: 100px;
+  font-size: small;
+  text-align: left;
+}
+.info{
+  font-size: small;
+  color: gray;
+}
