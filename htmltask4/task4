@@ -1,0 +1,12 @@
+<html>
+<head>
+  <title="task_4">
+  <link rel="stylesheet" href="task4.css"></link>
+</head>
+<body>
+  <div class="bg">
+    <div class="circle" id="left"></div>
+    <div class="circle" id="right"></div>
+  </div>
+</body>
+</html>
