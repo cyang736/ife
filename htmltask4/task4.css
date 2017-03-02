@@ -1,0 +1,24 @@
+.bg{
+  position: relative;;
+  width: 400px;
+  left:550px;
+  top:220px;
+  background: #ccc;
+  height: 200px;
+  overflow: hidden;/*溢出块隐藏*/
+}
+.circle{
+  position: absolute;;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fc0;
+}
+#left{
+  top:-25px;
+  left: -25px;
+}
+#right{
+  bottom: -25px;
+  right: -25px;
+}
