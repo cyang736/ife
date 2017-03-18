@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Task2-4</title>
+  <style>
+  #result span{
+    background: red;
+    float:left;
+    margin-left: 10px;
+    margin-top: 10px;
+font-size: 20px;
+  }
+  </style>
+</head>
+<body>
+  <div >
+    <input type="text" id="data_input"/>
+    <button  onclick="addToQueue(false)">左侧入</button>
+    <button  onclick="addToQueue(true)">右侧入</button>
+    <span>&nbsp&nbsp&nbsp&nbsp</span>
+    <button id="left-out" onclick="deleteFromQueue(false)">左侧出</button>
+    <button id="right-out" onclick="deleteFromQueue(true)">右侧出</button>
+  </div>
+  <div id="result"></div>
+  <script>
+function $(item){
+  return document.querySelector(item);
+}
+data=[];
+function validateInput(){
+  var input=$('#data_input').value;
+  if(!isNaN(input)&&input!=null){
+    $('#data_input').value='';//将输入框清空
+    return Number(input);//使用Number()函数处理一遍input,使其返回的只能是整数类型;
+  }
+  else{
+    alert(`input error!`)
+    return NaN;
+  }
+}
+function addToQueue(rightDir){
+  var num=validateInput();
+  if(isNaN(num)) return;
+  if(rightDir){
+    data.push(num);
+  }
+  else{
+    data.unshift(num);
+  }
+  updateArrayView();
+}
+function deleteFromQueue(item){
+  if(item){
+    alert(`${data.pop()} is out!`);
+  }
+  else{
+    alert(`${data.shift()} is out!`);
+  }
+  updateArrayView();
+}
+function deleteClick(index){
+  data.splice(index,1)
+  updateArrayView();
+}
+function updateArrayView(){
+  console.log(`refresh the data array:${data}`);
+  $('#result').innerHTML=data.map((e,i) => `<span onclick='deleteClick(${i})'>${e}</span>`).join('');
+}
+</script>
+</body>
+</html>
